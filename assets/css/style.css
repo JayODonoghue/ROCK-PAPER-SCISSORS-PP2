@@ -55,4 +55,21 @@ hr {
 
 .intro-page {
     height: 1200px;
+    display: flex;
+    justify-content: center;
+}
+
+#intro-one-liner {
+    background-color: black;
+    height: 30px;
+    width: 80%;
+    margin-top: 15px;
+    border: solid aquamarine 2px;
+}
+
+#intro-one-liner p {
+    padding-top: 3.5px;
+    text-align: center;
+    color: white;
+    
 }
