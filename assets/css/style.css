@@ -79,6 +79,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 65px;
 }
 
 .images-of-opponents{
@@ -91,7 +92,6 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 65px;
 }
 
 .images-of-opponents img {
@@ -109,4 +109,9 @@ hr {
 
 .the-rock {
     top: 0.2em;
+}
+
+.paper-airplane {
+    bottom: 3em;
+    right: 0em;
 }
