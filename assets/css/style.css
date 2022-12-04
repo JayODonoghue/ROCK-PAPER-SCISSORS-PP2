@@ -13,3 +13,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: #000;
 }
+
+/* Heading styling */
+h1 {
+    font-family: 'Sedgwick Ave Display', cursive;
+    text-align: center;
+}
