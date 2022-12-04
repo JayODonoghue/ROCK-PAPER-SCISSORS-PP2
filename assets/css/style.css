@@ -36,8 +36,8 @@ h1 {
     text-align: center;
     color: aquamarine;
     text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -51,25 +51,39 @@ hr {
     position: relative;
     left: 8%;
     width: 84%;
+    margin-bottom: 35px;
 }
 
+/* Intro page styling */
 .intro-page {
     height: 1200px;
-    display: flex;
-    justify-content: center;
+    display: block;
 }
 
 #intro-one-liner {
     background-color: black;
     height: 30px;
     width: 80%;
-    margin-top: 15px;
+    margin: 0 auto;
     border: solid aquamarine 2px;
 }
 
 #intro-one-liner p {
     padding-top: 3.5px;
     text-align: center;
-    color: white;
-    
+    color: white;   
+}
+
+.images-of-opponents {
+    position: relative;
+    background: url(../images/circle-with-arrows.png) no-repeat center;
+    background-size: 85%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+
 }
