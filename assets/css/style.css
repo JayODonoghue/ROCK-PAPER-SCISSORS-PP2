@@ -41,17 +41,15 @@ h1 {
 
 hr {
     border: none;
-    border-top: 3px double #333;
+    border-top: 3px solid aquamarine;
     color: aquamarine;
-    overflow: visible;
     text-align: center;
     height: 5px;
-}
-
-hr:after {
-    content: '§';
-    padding: 0 4px;
     position: relative;
-    top: -13px;
+    left: 8%;
+    width: 84%;
 }
 
+.intro-page {
+    height: 1200px;
+}
