@@ -35,8 +35,11 @@ h1 {
     font-family: 'Sedgwick Ave Display', cursive;
     text-align: center;
     color: aquamarine;
-    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
-             1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 hr {
