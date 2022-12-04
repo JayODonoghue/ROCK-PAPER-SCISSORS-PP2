@@ -84,7 +84,7 @@ hr {
 
 .images-of-opponents{
     position: relative;
-    background: url(../images/circle-with-arrows.png) no-repeat center;
+    background: url(../images/circle-with-arrows1.png) no-repeat center;
     background-size: 85%;
     width: 300px;
     height: 300px;
@@ -112,6 +112,11 @@ hr {
 }
 
 .paper-airplane {
-    bottom: 3em;
+    bottom: 2.9em;
     right: 0em;
+}
+
+.edward-scissorhands {
+    bottom: 2.9em;
+    left: 0em;
 }
