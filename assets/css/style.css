@@ -16,6 +16,20 @@ body {
     background: radial-gradient(rgb(218, 218, 218), rgb(0, 0, 0)) no-repeat;
 }
 
+/* Full page styling */
+#full-page {
+    width: 100%;
+    height: 100%;
+}
+
+/* Heading styling */
+header {
+    width: 100%;
+    height: 15%;
+}
+
+
+
 /* Heading styling */
 h1 {
     font-family: 'Sedgwick Ave Display', cursive;
@@ -24,3 +38,20 @@ h1 {
     text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
              1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
 }
+
+hr {
+    border: none;
+    border-top: 3px double #333;
+    color: aquamarine;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+hr:after {
+    content: '§';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+
