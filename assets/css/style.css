@@ -64,6 +64,7 @@ hr {
     background-color: black;
     height: 30px;
     width: 80%;
+    min-width: 260px;
     margin: 0 auto;
     border: solid aquamarine 2px;
 }
@@ -71,7 +72,9 @@ hr {
 #intro-one-liner p {
     padding-top: 3.5px;
     text-align: center;
-    color: white;   
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px;   
 }
 
 #images-of-opponents-container {
@@ -108,15 +111,15 @@ hr {
 }
 
 .the-rock {
-    top: 0.2em;
+    top: 0.1em;
 }
 
 .paper-airplane {
     bottom: 2.9em;
-    right: 0em;
+    right: 0.5em;
 }
 
 .edward-scissorhands {
     bottom: 2.9em;
-    left: 0em;
+    left: 0.5em;
 }
