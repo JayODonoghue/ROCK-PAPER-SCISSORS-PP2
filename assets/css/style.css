@@ -178,6 +178,29 @@ i {
     display: none;
 }
 
+#scores {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#scores h2{
+    font-size: 140%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    border: solid 2px black;
+}
+
+#player-score, #computer-score{
+    color: aquamarine;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+    margin-left: 5px;
+}
+
 #choices-container {
     display: flex;
     flex-direction: column;
