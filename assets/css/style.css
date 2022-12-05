@@ -61,10 +61,12 @@ hr {
     display: block;
     opacity: 1;
     transition: 0.3s ease-in-out;
+    display: none;
 }
 
-.intro-page.fade {
+#intro-page.fade {
     opacity: 0;
+    display: none;
 }
 
 #intro-one-liner {
@@ -104,7 +106,7 @@ hr {
     align-items: center;
 }
 
-.images-of-opponents img {
+.images-of-opponents>img {
     position: absolute;
     background-color: white;
     width: 100px;
@@ -150,6 +152,11 @@ hr {
     width: 180px;
     height: 40px;
     border-radius: 3px;
+    transition: 100ms;
+}
+
+#launch-game-btn:hover {
+    transform: scale(1.1);
 }
 
 /* Footer styling */
@@ -167,3 +174,39 @@ i {
 }
 
 /* Game area styling */
+#game-area {
+    height: 600px;
+    display: block;
+}
+
+#choices-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+}
+
+button img { 
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: solid 5px black;
+}
+
+.choice {
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+    transition: transform 0.7s ease-in-out;
+}
+
+.choice:hover {
+    transform: rotate(360deg);
+}
