@@ -56,9 +56,15 @@ hr {
 }
 
 /* Intro page styling */
-.intro-page {
+#intro-page {
     height: 600px;
     display: block;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.intro-page.fade {
+    opacity: 0;
 }
 
 #intro-one-liner {
@@ -159,3 +165,5 @@ i {
     color: rgb(218, 218, 218);
     font-size: 150%;
 }
+
+/* Game area styling */
