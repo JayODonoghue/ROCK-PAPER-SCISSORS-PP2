@@ -5,11 +5,16 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 const launchButton = document.getElementById("launch-game-btn")
-const introPage = document.querySelectorAll("#intro-page");
+const introPage = document.getElementById("intro-page");
+const gameArea = document.getElementById("game-area")
 
+/**Event Listener for Launch Game Button */
 launchButton.addEventListener("click", launchGame);
 
 
+
 function launchGame() {
-    launchButton.style.display = 'none'
+    introPage.style.display = 'none'
+    gameArea.style.display = 'block'
+
 }

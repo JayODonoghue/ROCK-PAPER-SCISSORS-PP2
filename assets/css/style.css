@@ -61,7 +61,7 @@ hr {
     display: block;
     opacity: 1;
     transition: 0.3s ease-in-out;
-    display: none;
+    
 }
 
 #intro-page.fade {
@@ -175,7 +175,6 @@ i {
 /* Game area styling */
 #game-area {
     height: 600px;
-    display: block;
     display: none;
 }
 
