@@ -215,6 +215,12 @@ button img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: black;
+    width: 90%;
+    border: solid aquamarine 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 20px;
 }
 
 .choice-reminder p {
@@ -223,5 +229,16 @@ button img {
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px; 
+}
+
+.first-to-5 {
+    font-family: 'Sedgwick Ave Display', cursive;
+    text-align: center;
+    color: aquamarine;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+    margin-top: 40px;
 }
 
