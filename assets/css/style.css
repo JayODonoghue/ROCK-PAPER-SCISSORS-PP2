@@ -65,7 +65,6 @@ hr {
 }
 
 #intro-page.fade {
-    opacity: 0;
     display: none;
 }
 
@@ -177,6 +176,7 @@ i {
 #game-area {
     height: 600px;
     display: block;
+    display: none;
 }
 
 #choices-container {
@@ -210,3 +210,19 @@ button img {
 .choice:hover {
     transform: rotate(360deg);
 }
+
+.choice-reminder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice-reminder p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
