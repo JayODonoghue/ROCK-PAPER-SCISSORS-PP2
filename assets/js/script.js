@@ -12,7 +12,6 @@ const possibleChoices = document.querySelectorAll(".choice");
 const battleContainer = document.getElementById("battle-container");
 const playerChoiceDisplay = document.getElementsByClassName("player-choice");
 const computerChoiceDisplay = document.getElementsByClassName("computer-choice");
-
 let computerChoice
 
 /**Event Listener for Launch Game Button */
@@ -40,7 +39,16 @@ function possibleChoice (event) {
 function createComputerChoice () {
     let randomNumber = Math.floor(Math.random() * possibleChoices.length) +1;
     
+    if (randomNumber === 1) {
+        computerChoice = "the-rock"
+    }
+    if (randomNumber === 2) {
+        computerChoice = "paper-airplane"
+    }
+    if (randomNumber === 3) {
+        computerChoice = "edward-scissorhands"
+    }
 
-   
+    computerChoiceDisplay[0].innerHTML = computerChoice;
 
 }
