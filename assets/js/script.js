@@ -10,7 +10,10 @@ const gameArea = document.getElementById("game-area");
 const choicesContainer = document.getElementById("choices-container");
 const possibleChoices = document.querySelectorAll(".choice");
 const battleContainer = document.getElementById("battle-container");
-let userChoice
+const playerChoiceDisplay = document.getElementsByClassName("player-choice");
+const computerChoiceDisplay = document.getElementsByClassName("computer-choice");
+
+let computerChoice
 
 /**Event Listener for Launch Game Button */
 launchButton.addEventListener("click", launchGame);
@@ -24,7 +27,20 @@ function launchGame() {
     gameArea.style.display = 'block';
 }
 
-function possibleChoice () {
+function possibleChoice (event) {
+    let playerChoice = event.target.className;
+    playerChoiceDisplay[0].innerHTML = playerChoice;
+
     choicesContainer.style.display = 'none';
     battleContainer.style.display = 'flex';
+
+    createComputerChoice();
+}
+
+function createComputerChoice () {
+    let randomNumber = Math.floor(Math.random() * possibleChoices.length) +1;
+    
+
+   
+
 }
