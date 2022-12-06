@@ -188,7 +188,7 @@ i {
 }
 
 #scores h2{
-    font-size: 140%;
+    font-size: 130%;
     background-color: white;
     border-radius: 5px;
     padding: 5px;
@@ -263,5 +263,39 @@ button img {
     color: aquamarine;
     text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
     margin-top: 40px;
+}
+
+/* Battle container styling */
+#battle-container{    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 65px;
+    width: 100vw;
+    display: none;
+}
+
+.player-choice, .computer-choice {
+    width: 40%;
+    background-color: #000;
+    height: 390px;
+    color: white;
+    font-family: 'Sedgwick Ave Display', cursive;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.vs {
+    width: 15%;
+    height: 390px;
+    color: aquamarine;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+    font-size: 300%;
+    font-family: 'Sedgwick Ave Display', cursive;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 

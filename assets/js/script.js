@@ -7,16 +7,17 @@ document.addEventListener("DOMContentLoaded", function() {
 const launchButton = document.getElementById("launch-game-btn");
 const introPage = document.getElementById("intro-page");
 const gameArea = document.getElementById("game-area");
-const choicesContainer = document.getElementById("choices-container")
+const choicesContainer = document.getElementById("choices-container");
 const possibleChoices = document.querySelectorAll(".choice");
+const battleContainer = document.getElementById("battle-container");
 let userChoice
 
 /**Event Listener for Launch Game Button */
 launchButton.addEventListener("click", launchGame);
 
-possibleChoices[0].addEventListener("click", possibleChoice)
-possibleChoices[1].addEventListener("click", possibleChoice)
-possibleChoices[2].addEventListener("click", possibleChoice)
+for (let choice in possibleChoices) {
+    possibleChoices[choice].addEventListener("click", possibleChoice)
+}
 
 function launchGame() {
     introPage.style.display = 'none';
@@ -25,4 +26,5 @@ function launchGame() {
 
 function possibleChoice () {
     choicesContainer.style.display = 'none';
+    battleContainer.style.display = 'flex';
 }
