@@ -297,5 +297,12 @@ button img {
     text-align: center;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
+.result-message {
+    background-color: black;
+    width: 30%;
+    height: 40px;
+    color: white;
+}
