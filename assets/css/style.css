@@ -305,27 +305,35 @@ button img {
     height: 40px;
     display: none;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin-top: 25px;
 }
 
-.result-message p {
+.result-message h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     color: black;
-    text-shadow: 2px 0 white, -2px 0 white, 0 2px white, 0 -2px white, 1px 1px white, -1px -1px white, 1px -1px white, -1px 1px white;
+    text-shadow: 2px 0 aquamarine, -2px 0 aquamarine, 0 2px aquamarine, 0 -2px aquamarine, 1px 1px aquamarine, -1px -1px aquamarine, 1px -1px aquamarine, -1px 1px aquamarine;
     font-size: 160%;
-    font-weight: 200%;
 }
 
 .result-message button {
-    font-size: 130%;
-    background-color: white;
+    color: aquamarine;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+    background-color: rgb(218, 218, 218);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 140%;
+    width: 180px;
+    height: 40px;
     border-radius: 3px;
+    transition: 100ms;
     padding: 5px;
-    border: solid 2px black;
+}
+
+.result-message button:hover {
+    transform: scale(1.1);
 }

@@ -93,7 +93,7 @@ function createResults () {
     resultMessage[0].style.display = 'flex';
     
     resultMessage[0].innerHTML = 
-        `<p>${result}</p>
+        `<h3>${result}</h3>
          <button id="next-round-btn">NEXT ROUND</button>` ;
 
     let nextRoundButton = document.getElementById("next-round-btn");
