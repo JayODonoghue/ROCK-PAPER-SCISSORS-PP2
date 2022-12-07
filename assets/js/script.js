@@ -23,6 +23,8 @@ for (let choice in possibleChoices) {
     possibleChoices[choice].addEventListener("click", possibleChoice)
 }
 
+
+
 function launchGame() {
     introPage.style.display = 'none';
     gameArea.style.display = 'block';
@@ -89,18 +91,26 @@ function createResults () {
 
     
     let resultMessage = document.createElement('div');
-    resultMessage.classList.add('result-message');
+    
     gameArea.appendChild(resultMessage);
     gameArea.insertBefore(resultMessage, gameArea.children[3]);
     
-    resultMessage.innerText = result;
+    resultMessage.outerHTML = 
+        `<div class="result-message">
+            <p>${result}</p>
+            <button id="next-round-btn">NEXT ROUND</button>
+        </div>` ;
 
+    let nextRoundButton = document.getElementById("next-round-btn");
+    nextRoundButton.addEventListener("click", nextRound);
 
+    if (nextRoundButton.event === "click") {
+    resultMessage.style.display = 'none'; }
 }
 
 function addPlayerScore () {
-        let oldScore = parseInt(document.getElementById("player-score").innerText);
-        document.getElementById("player-score").innerText = ++oldScore;
+    let oldScore = parseInt(document.getElementById("player-score").innerText);
+    document.getElementById("player-score").innerText = ++oldScore;
     
 }
 
@@ -108,4 +118,12 @@ function addComputerScore () {
     let oldScore = parseInt(document.getElementById("computer-score").innerText);
     document.getElementById("computer-score").innerText = ++oldScore;
 
+}
+
+function nextRound () {
+    //let nextRoundButton = document.getElementById("next-round-btn");
+    battleContainer.style.display = 'none';
+    choicesContainer.style.display = 'flex';
+
+    
 }
