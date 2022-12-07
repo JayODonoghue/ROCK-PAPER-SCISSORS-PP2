@@ -113,7 +113,6 @@ function addComputerScore () {
 }
 
 function nextRound () {
-    //let nextRoundButton = document.getElementById("next-round-btn");
     battleContainer.style.display = 'none';
     choicesContainer.style.display = 'flex';
     resultMessage[0].style.display = 'none';

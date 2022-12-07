@@ -301,13 +301,31 @@ button img {
 }
 
 .result-message {
-    background-color: black;
-    width: 30%;
+    background-color: none;
     height: 40px;
-    color: white;
     display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 25px;
+}
+
+.result-message p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    color: black;
+    text-shadow: 2px 0 white, -2px 0 white, 0 2px white, 0 -2px white, 1px 1px white, -1px -1px white, 1px -1px white, -1px 1px white;
+    font-size: 160%;
+    font-weight: 200%;
+}
+
+.result-message button {
+    font-size: 130%;
+    background-color: white;
+    border-radius: 3px;
+    padding: 5px;
+    border: solid 2px black;
 }
