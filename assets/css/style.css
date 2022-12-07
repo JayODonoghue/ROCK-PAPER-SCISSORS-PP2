@@ -305,4 +305,9 @@ button img {
     width: 30%;
     height: 40px;
     color: white;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
 }

@@ -12,6 +12,7 @@ const possibleChoices = document.querySelectorAll(".choice");
 const battleContainer = document.getElementById("battle-container");
 const playerChoiceDisplay = document.getElementsByClassName("player-choice");
 const computerChoiceDisplay = document.getElementsByClassName("computer-choice");
+const resultMessage = document.getElementsByClassName("result-message");
 let playerChoice
 let computerChoice
 
@@ -89,23 +90,14 @@ function createResults () {
         addPlayerScore ();
     }
 
+    resultMessage[0].style.display = 'flex';
     
-    let resultMessage = document.createElement('div');
-    
-    gameArea.appendChild(resultMessage);
-    gameArea.insertBefore(resultMessage, gameArea.children[3]);
-    
-    resultMessage.outerHTML = 
-        `<div class="result-message">
-            <p>${result}</p>
-            <button id="next-round-btn">NEXT ROUND</button>
-        </div>` ;
+    resultMessage[0].innerHTML = 
+        `<p>${result}</p>
+         <button id="next-round-btn">NEXT ROUND</button>` ;
 
     let nextRoundButton = document.getElementById("next-round-btn");
     nextRoundButton.addEventListener("click", nextRound);
-
-    if (nextRoundButton.event === "click") {
-    resultMessage.style.display = 'none'; }
 }
 
 function addPlayerScore () {
@@ -124,6 +116,6 @@ function nextRound () {
     //let nextRoundButton = document.getElementById("next-round-btn");
     battleContainer.style.display = 'none';
     choicesContainer.style.display = 'flex';
-
+    resultMessage[0].style.display = 'none';
     
 }
