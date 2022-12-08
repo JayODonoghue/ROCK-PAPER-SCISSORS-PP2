@@ -269,27 +269,47 @@ button img {
 #battle-container{    
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 65px;
     width: 100vw;
     display: none;
 }
 
-.player-choice, .computer-choice {
-    width: 40%;
-    background-color: #000;
-    height: 390px;
-    color: white;
-    font-family: 'Sedgwick Ave Display', cursive;
-    text-align: center;
+.player-choice {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+.player-choice>img {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: solid 5px black;
+}
+
+.computer-choice>img {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: solid 5px black;
 }
 
 .vs {
     width: 15%;
-    height: 390px;
+    height: 250px;
     color: aquamarine;
     text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
     font-size: 300%;

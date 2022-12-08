@@ -10,6 +10,7 @@ const gameArea = document.getElementById("game-area");
 const choicesContainer = document.getElementById("choices-container");
 const possibleChoices = document.querySelectorAll(".choice");
 const battleContainer = document.getElementById("battle-container");
+const imagesOfOpponents = document.getElementsByClassName("images-of-opponents");
 const playerChoiceDisplay = document.getElementsByClassName("player-choice");
 const computerChoiceDisplay = document.getElementsByClassName("computer-choice");
 const resultMessage = document.getElementsByClassName("result-message");
@@ -35,7 +36,18 @@ function launchGame() {
 
 function possibleChoice (event) {
     playerChoice = event.target.className;
-    playerChoiceDisplay[0].innerHTML = playerChoice;
+    
+    if (playerChoice === "the-rock") {
+        playerChoiceDisplay[0].innerHTML = imagesOfOpponents[0].children[0].outerHTML
+    }
+
+    if (playerChoice === "edward-scissorhands") {
+        playerChoiceDisplay[0].innerHTML = imagesOfOpponents[0].children[1].outerHTML
+    }
+
+    if (playerChoice === "paper-airplane") {
+        playerChoiceDisplay[0].innerHTML = imagesOfOpponents[0].children[2].outerHTML
+    }
 
     choicesContainer.style.display = 'none';
     battleContainer.style.display = 'flex';
@@ -57,7 +69,17 @@ function createComputerChoice () {
             computerChoice = "edward-scissorhands";
     }
 
-    computerChoiceDisplay[0].innerHTML = computerChoice;
+    if (computerChoice === "the-rock") {
+        computerChoiceDisplay[0].innerHTML = imagesOfOpponents[0].children[0].outerHTML
+    }
+
+    if (computerChoice === "edward-scissorhands") {
+        computerChoiceDisplay[0].innerHTML = imagesOfOpponents[0].children[1].outerHTML
+    }
+
+    if (computerChoice === "paper-airplane") {
+        computerChoiceDisplay[0].innerHTML = imagesOfOpponents[0].children[2].outerHTML
+    }
 
     createResults();
 }
