@@ -63,33 +63,26 @@ function createComputerChoice () {
 }
 
 function createResults () {
-    let result
-    if (playerChoice === computerChoice) {
-        result = "IT'S A DRAW!";
-    }
-    if (playerChoice === "the-rock" && computerChoice === "paper-airplane") {
-        result = "YOU LOSE!";
-        addComputerScore ();
-    }
-    if (playerChoice === "the-rock" && computerChoice === "edward-scissorhands") {
-        result = "YOU WIN!";
-        addPlayerScore ();
-    }
-    if (playerChoice === "paper-airplane" && computerChoice === "edward-scissorhands") {
-        result = "YOU LOSE!";
-        addComputerScore ();
-    }
-    if (playerChoice === "paper-airplane" && computerChoice === "the-rock") {
-        result = "YOU WIN!";
-        addPlayerScore ();
-    }
-    if (playerChoice === "edward-scissorhands" && computerChoice === "the-rock") {
-        result = "YOU LOSE!";
-        addComputerScore ();
-    }
-    if (playerChoice === "edward-scissorhands" && computerChoice === "paper-airplane") {
-        result = "YOU WIN!";
-        addPlayerScore ();
+    let result;
+
+    switch (playerChoice + computerChoice) {
+        case "the-rockthe-rock":
+        case "paper-airplanepaper-airplane":
+        case "edward-scissorhandsedwardscissorhands":
+            result = "IT'S A DRAW!";
+            break;
+        case "the-rockedward-scissorhands":
+        case "edward-scissorhandspaper-airplane":
+        case "paper-airplanethe-rock":
+            result = "YOU WIN!";
+            addPlayerScore ();
+            break;
+        case "the-rockpaper-airplane":
+        case "edward-scissorhandsthe-rock":
+        case "paper-airplaneedward-scissorhands":
+            result = "YOU LOSE!";
+            addComputerScore ();
+            break;
     }
 
     resultMessage[0].style.display = 'flex';
@@ -121,7 +114,6 @@ function nextRound () {
 
 
 function checkScore () {
-    
     if (playerScore.innerText === 5) {
         console.log("YOU WIN!")
     }
