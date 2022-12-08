@@ -116,10 +116,13 @@ function nextRound () {
 
 
 function checkScore () {
+    let winnerModal = document.getElementById("winner-modal")
+    let loserModal = document.getElementById("loser-modal")
+
     if (playerScore.innerText === "5") {
-        alert("YOU WIN!")
+       winnerModal.style.display = "block"
     }
     if (computerScore.innerText === "5") {
-        alert("YOU LOSE")
+        loserModal.style.display = "block"
     }
 }
