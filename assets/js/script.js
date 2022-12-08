@@ -13,6 +13,8 @@ const battleContainer = document.getElementById("battle-container");
 const playerChoiceDisplay = document.getElementsByClassName("player-choice");
 const computerChoiceDisplay = document.getElementsByClassName("computer-choice");
 const resultMessage = document.getElementsByClassName("result-message");
+let playerScore = document.getElementById("player-score");
+let computerScore = document.getElementById("computer-score");
 let playerChoice
 let computerChoice
 
@@ -101,20 +103,29 @@ function createResults () {
 }
 
 function addPlayerScore () {
-    let oldScore = parseInt(document.getElementById("player-score").innerText);
-    document.getElementById("player-score").innerText = ++oldScore;
-    
+    let oldScore = parseInt(playerScore.innerText);
+    playerScore.innerText = ++oldScore;
 }
 
 function addComputerScore () {
-    let oldScore = parseInt(document.getElementById("computer-score").innerText);
-    document.getElementById("computer-score").innerText = ++oldScore;
-
+    let oldScore = parseInt(computerScore.innerText);
+    computerScore.innerText = ++oldScore;
 }
 
 function nextRound () {
     battleContainer.style.display = 'none';
     choicesContainer.style.display = 'flex';
     resultMessage[0].style.display = 'none';
+    checkScore();
+}
+
+
+function checkScore () {
     
+    if (playerScore.innerText === 5) {
+        console.log("YOU WIN!")
+    }
+    if (computerScore.innerText === 5) {
+        console.log("YOU LOSE")
+    }
 }
