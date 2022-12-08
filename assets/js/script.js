@@ -68,7 +68,7 @@ function createResults () {
     switch (playerChoice + computerChoice) {
         case "the-rockthe-rock":
         case "paper-airplanepaper-airplane":
-        case "edward-scissorhandsedwardscissorhands":
+        case "edward-scissorhandsedward-scissorhands":
             result = "IT'S A DRAW!";
             break;
         case "the-rockedward-scissorhands":
@@ -76,12 +76,14 @@ function createResults () {
         case "paper-airplanethe-rock":
             result = "YOU WIN!";
             addPlayerScore ();
+            checkScore ();
             break;
         case "the-rockpaper-airplane":
         case "edward-scissorhandsthe-rock":
         case "paper-airplaneedward-scissorhands":
             result = "YOU LOSE!";
             addComputerScore ();
+            checkScore ();
             break;
     }
 
@@ -114,10 +116,10 @@ function nextRound () {
 
 
 function checkScore () {
-    if (playerScore.innerText === 5) {
-        console.log("YOU WIN!")
+    if (playerScore.innerText === "5") {
+        alert("YOU WIN!")
     }
-    if (computerScore.innerText === 5) {
-        console.log("YOU LOSE")
+    if (computerScore.innerText === "5") {
+        alert("YOU LOSE")
     }
 }
