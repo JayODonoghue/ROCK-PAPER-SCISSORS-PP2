@@ -344,21 +344,21 @@ button img {
 }
 
 .result-message button {
-    color: aquamarine;
-    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
-    background-color: rgb(218, 218, 218);
+    color: white;
+    background-color: #000;
     text-transform: uppercase;
-    font-weight: 700;
-    font-size: 140%;
-    width: 180px;
+    font-weight: 800;
+    font-size: 110%;
+    width: 150px;
     height: 40px;
     border-radius: 3px;
     transition: 100ms;
+    border: 2px solid white;
     padding: 5px;
 }
 
 .result-message button:hover {
-    transform: scale(1.1);
+    transform: scale(1.08);
 }
 
 .modal {
