@@ -14,10 +14,13 @@ const imagesOfOpponents = document.getElementsByClassName("images-of-opponents")
 const playerChoiceDisplay = document.getElementsByClassName("player-choice");
 const computerChoiceDisplay = document.getElementsByClassName("computer-choice");
 const resultMessage = document.getElementsByClassName("result-message");
+const newGameButtons = document.querySelectorAll(".new-game-btn");
 let playerScore = document.getElementById("player-score");
 let computerScore = document.getElementById("computer-score");
 let playerChoice
 let computerChoice
+let winnerModal
+let loserModal
 
 
 /**Event Listener for Launch Game Button */
@@ -26,7 +29,6 @@ launchButton.addEventListener("click", launchGame);
 for (let choice in possibleChoices) {
     possibleChoices[choice].addEventListener("click", possibleChoice)
 }
-
 
 
 function launchGame() {
@@ -147,4 +149,22 @@ function checkScore () {
     if (computerScore.innerText === "5") {
         loserModal.style.display = "block"
     }
+
+    newGameButtons[0].addEventListener("click", newGame);
+    newGameButtons[1].addEventListener("click", newGame);
+
 }
+
+
+function newGame () {
+    let winnerModal = document.getElementById("winner-modal")
+    let loserModal = document.getElementById("loser-modal")
+    loserModal.style.display = "none";
+    winnerModal.style.display = "none";
+    battleContainer.style.display = 'none';
+    choicesContainer.style.display = 'flex';
+    resultMessage[0].style.display = 'none';
+    playerScore.innerText = "0";
+    computerScore.innerText = "0";
+}
+
