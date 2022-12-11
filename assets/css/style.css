@@ -25,6 +25,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+    overflow: auto;
 }
 
 /* Heading styling */
@@ -63,13 +64,6 @@ hr {
 #intro-page {
     height: 600px;
     display: block;
-    opacity: 1;
-    transition: 0.3s ease-in-out;
-    
-}
-
-#intro-page.fade {
-    display: none;
 }
 
 #intro-one-liner {
