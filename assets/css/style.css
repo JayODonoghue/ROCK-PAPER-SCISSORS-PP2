@@ -56,7 +56,7 @@ hr {
     position: relative;
     left: 8%;
     width: 84%;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
 
 /* Intro page styling */
@@ -79,7 +79,8 @@ hr {
     text-align: center;
     color: white;
     padding-left: 8px;
-    padding-right: 8px;   
+    padding-right: 8px;  
+    font-size: 100%;
 }
 
 /*Images of opponents styling */
@@ -257,6 +258,7 @@ button img {
     color: white;
     padding-left: 8px;
     padding-right: 8px; 
+    font-size: 100%;
 }
 
 /*First to five reminder styling*/
@@ -422,6 +424,7 @@ button img {
     text-align: center;
     margin: 0 auto;
     padding: 20px;
+    font-size: 100%;
 }
 
 .new-game-btn {
@@ -471,7 +474,7 @@ button img {
         width: 320px;
         height: 320px;
     }
-    #launch-game-button {
+    #launch-game-btn {
         font-weight: 800;
         font-size: 120%;
         width: 155px;
@@ -492,12 +495,70 @@ button img {
         height: 500px;
         width: 350px;
     }
-    .winner-modal-content, .loser-modal-content {
+    .h3-modal {
         font-size: 150%;
     }
 }
 
 /*Media Queries for iPads/Tablets screen sizes 769px and up*/
 @media screen and (min-width: 769px) {
-
+    h1 {
+        font-size: 245%;
+    }
+    #intro-one-liner {
+        height: 34px;
+        font-size: 110%;
+    }
+    .images-of-opponents>img {
+        width: 125px;
+        height: 125px;
+    }
+    button img {
+        width: 125px;
+        height: 125px;
+    }
+    .player-choice>img {
+        width: 200px;
+        height: 200px;
+    }
+    .computer-choice>img {
+        width: 200px;
+        height: 200px;
+    }
+    .images-of-opponents {
+        width: 350px;
+        height: 350px;
+    }
+    #launch-game-btn {
+        font-size: 125%;
+        width: 160px;
+        height: 50px;
+    }
+    #scores h2 {
+        font-size: 150%;
+    }
+    .result-message h3 {
+        margin-top: 35px;
+    }
+    .result-message button {
+        font-size: 125%;
+        width: 175px;
+        height: 50px
+    }
+    .choice-reminder p {
+        font-size: 110%;
+    }
+    .first-to-5 h3 {
+        font-size: 150%;
+    }
+    .winner-modal-content, .loser-modal-content {
+        height: 500px;
+        width: 350px;
+    }
+    .h3-modal {
+        font-size: 160%;
+    }
+    .modal p {
+        font-size: 110%;
+    }
 }
