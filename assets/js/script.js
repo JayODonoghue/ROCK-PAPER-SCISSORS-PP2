@@ -26,12 +26,18 @@ for (let choice of possibleChoices) {
     choice.addEventListener("click", possibleChoice)
 }
 
-
+/**First function called into action when the launch-game-btn is clicked.
+ * Transitions from the intro page to the game area.
+ */ 
 function launchGame() {
     introPage.style.display = 'none';
     gameArea.style.display = 'block';
 }
 
+/**This function is called upon when the user makes their selection from the 3 choices made available.
+ * Once the user selects their choice the createComputerChoice is called upon.
+ * Also once the selection is made, the battle container is called upon and the players choice is used for display.
+ */
 function possibleChoice (event) {
     playerChoice = event.target.className;
     
@@ -52,6 +58,9 @@ function possibleChoice (event) {
     createComputerChoice();
 }
 
+/**This function randomly chooses the computers choice from an array and the selection is then also used for the battle container.
+ * This then calls upon the create results function.
+ */
 function createComputerChoice () {
     let randomNumber = Math.floor(Math.random() * possibleChoices.length) +1;
     
@@ -80,6 +89,11 @@ function createComputerChoice () {
     createResults();
 }
 
+/**Checks to determine who is the winner of the round using string concatenation. 
+ * Result displays stating the verdict.
+ * Once the reults message is displayed it calls the on the score functions.
+ * The next round button is also called and when clicked calls upon the nextRound function.
+ */
 function createResults () {
     let result;
 
@@ -115,16 +129,21 @@ function createResults () {
     nextRoundButton.addEventListener("click", nextRound);
 }
 
+/**This function adds a score to the user if they win the round */
 function addPlayerScore () {
     let oldScore = parseInt(playerScore.innerText);
     playerScore.innerText = ++oldScore;
 }
 
+/**This function adds a score to the computer if they win the round */
 function addComputerScore () {
     let oldScore = parseInt(computerScore.innerText);
     computerScore.innerText = ++oldScore;
 }
 
+/**This function reverts back to battle container with the updated scores now implemented.
+ * It also calls upon the checkScore function.
+ */
 function nextRound () {
     battleContainer.style.display = 'none';
     choicesContainer.style.display = 'flex';
@@ -132,7 +151,9 @@ function nextRound () {
     checkScore();
 }
 
-
+/**This function results in a modal popping up when either the player or compueter reach a score of 5.
+ * This modal oinclides a new game button and when it is clicked it calls the newGame function.
+ */
 function checkScore () {
     let winnerModal = document.getElementById("winner-modal")
     let loserModal = document.getElementById("loser-modal")
@@ -149,7 +170,7 @@ function checkScore () {
 
 }
 
-
+/**This function returns the user to the battle container with the scores refreshing to 0 */
 function newGame () {
     let winnerModal = document.getElementById("winner-modal")
     let loserModal = document.getElementById("loser-modal")
