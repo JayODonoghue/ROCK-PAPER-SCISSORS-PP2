@@ -35,16 +35,15 @@ function launchGame() {
 function possibleChoice (event) {
     playerChoice = event.target.className;
     
-    if (playerChoice === "the-rock") {
-        playerChoiceDisplay[0].innerHTML = imagesOfOpponents[0].children[0].outerHTML
-    }
-
-    if (playerChoice === "edward-scissorhands") {
-        playerChoiceDisplay[0].innerHTML = imagesOfOpponents[0].children[1].outerHTML
-    }
-
-    if (playerChoice === "paper-airplane") {
-        playerChoiceDisplay[0].innerHTML = imagesOfOpponents[0].children[2].outerHTML
+    switch (playerChoice) {
+        case "the-rock": 
+            playerChoiceDisplay[0].innerHTML = imagesOfOpponents[0].children[0].outerHTML;
+        break;
+        case "edward-scissorhands": 
+            playerChoiceDisplay[0].innerHTML = imagesOfOpponents[0].children[1].outerHTML;
+        break;
+        case "paper-airplane":
+            playerChoiceDisplay[0].innerHTML = imagesOfOpponents[0].children[2].outerHTML
     }
 
     choicesContainer.style.display = 'none';
@@ -67,16 +66,15 @@ function createComputerChoice () {
             computerChoice = "edward-scissorhands";
     }
 
-    if (computerChoice === "the-rock") {
-        computerChoiceDisplay[0].innerHTML = imagesOfOpponents[0].children[0].outerHTML
-    }
-
-    if (computerChoice === "edward-scissorhands") {
-        computerChoiceDisplay[0].innerHTML = imagesOfOpponents[0].children[1].outerHTML
-    }
-
-    if (computerChoice === "paper-airplane") {
-        computerChoiceDisplay[0].innerHTML = imagesOfOpponents[0].children[2].outerHTML
+    switch (computerChoice) {
+        case "the-rock": 
+            computerChoiceDisplay[0].innerHTML = imagesOfOpponents[0].children[0].outerHTML;
+        break;
+        case "edward-scissorhands": 
+            computerChoiceDisplay[0].innerHTML = imagesOfOpponents[0].children[1].outerHTML;
+        break;
+        case "paper-airplane":
+            computerChoiceDisplay[0].innerHTML = imagesOfOpponents[0].children[2].outerHTML
     }
 
     createResults();
