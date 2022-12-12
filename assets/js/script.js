@@ -1,9 +1,4 @@
-/**Wait for the DOM to finish loading before running the game
- * Get the button elements and add event listeneres to them*/
-document.addEventListener("DOMContentLoaded", function() {
-   let buttons = document.getElementsByTagName("button");
-})
-
+/**List of global variables required throughout */
 const launchButton = document.getElementById("launch-game-btn");
 const introPage = document.getElementById("intro-page");
 const gameArea = document.getElementById("game-area");
@@ -26,6 +21,7 @@ let loserModal
 /**Event Listener for Launch Game Button */
 launchButton.addEventListener("click", launchGame);
 
+/**Event Listener for when user clicks which their selection */
 for (let choice of possibleChoices) {
     choice.addEventListener("click", possibleChoice)
 }
