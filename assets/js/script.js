@@ -26,8 +26,8 @@ let loserModal
 /**Event Listener for Launch Game Button */
 launchButton.addEventListener("click", launchGame);
 
-for (let choice in possibleChoices) {
-    possibleChoices[choice].addEventListener("click", possibleChoice)
+for (let choice of possibleChoices) {
+    choice.addEventListener("click", possibleChoice)
 }
 
 
