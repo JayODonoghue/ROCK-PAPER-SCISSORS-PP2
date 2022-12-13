@@ -32,7 +32,15 @@ This version of the rock, paper, scissors game that everyone is familiar with an
 * I want the site to be responsive to my device.
 * I want the site to be easy to navigate.
 
+#### Returning Visitor Goals
 
+* I want to see a display modal appear to inform who the winner of the game is.
+* I want to be able to start a new game once a winner from the previous game is declared.
+
+#### Frequent Visitor Goals
+
+* I want to be able to continue to play for no matter how long with the reassurance that the game will perform with consistency every time. 
+ 
 
 
 
