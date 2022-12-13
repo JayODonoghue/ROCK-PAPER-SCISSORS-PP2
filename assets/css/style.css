@@ -74,7 +74,7 @@ hr {
     border: solid aquamarine 2px;
 }
 
-#intro-one-liner p {
+#intro-one-liner h6 {
     padding-top: 3.5px;
     text-align: center;
     color: white;
