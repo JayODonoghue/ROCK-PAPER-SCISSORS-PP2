@@ -7,6 +7,12 @@ This version of the rock, paper, scissors game that everyone is familiar with an
 
 [View Rock, Paper, Scissors live game on Github pages here](https://jayodonoghue.github.io/ROCK-PAPER-SCISSORS-PP2/)
 
+---
+
+## CONTENT
+
+
+---
 
 ## Testing
 
@@ -38,10 +44,12 @@ The CSS Validator was used on every CSS aspect of the project.
 
 ### Lighthouse
 
+<br/>
+
 I used the Lighthouse feature in the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
 
 <br/>
 
-![Lighthouse Results](assets/images/readme-images/lighthouse-results-desktop.png)
+![Lighthouse Results](assets/images/readme-images/lighthouse-results-desktop-image.png)
 
 <br/>
