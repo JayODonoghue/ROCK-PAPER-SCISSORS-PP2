@@ -70,7 +70,45 @@ The following two fonts were picked as they complimented each other.
 
 <br/>
 
+### Imagery
 
+<br/>
+
+ All images are taken from websites which are correctly credited in the credits section.
+
+<br/>
+
+### Wireframes
+
+<br/>
+
+Wireframes were created for mobile, the desktop is the exact same layout with just larger elements.
+
+<br/>
+
+Introduction page
+
+![Opening page Wireframes](assets/images/readme-images/rps-opening-page-wireframe.png)
+
+<br/>
+
+Choice Container
+
+![Main page Wireframes](assets/images/readme-images/rps-main-page-wireframe.png)
+
+<br/>
+
+Battle Container
+
+![Battle page Wireframes](assets/images/readme-images/rps-battle-page-wireframe.png)
+
+<br/>
+
+Result Modal
+
+![Result-modal Wireframes](assets/images/readme-images/rps-resultModal-wireframe.png)
+
+<br/>
 
 ## Testing
 
