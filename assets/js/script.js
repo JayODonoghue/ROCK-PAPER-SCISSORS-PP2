@@ -12,10 +12,8 @@ const resultMessage = document.getElementsByClassName("result-message");
 const newGameButtons = document.querySelectorAll(".new-game-btn");
 let playerScore = document.getElementById("player-score");
 let computerScore = document.getElementById("computer-score");
-let playerChoice
-let computerChoice
-let winnerModal
-let loserModal
+let playerChoice;
+let computerChoice;
 
 
 /**Event Listener for Launch Game Button */
@@ -23,7 +21,7 @@ launchButton.addEventListener("click", launchGame);
 
 /**Event Listener for when user clicks which their selection */
 for (let choice of possibleChoices) {
-    choice.addEventListener("click", possibleChoice)
+    choice.addEventListener("click", possibleChoice);
 }
 
 /**First function called into action when the launch-game-btn is clicked.
@@ -49,7 +47,7 @@ function possibleChoice (event) {
             playerChoiceDisplay[0].innerHTML = imagesOfOpponents[0].children[1].outerHTML;
         break;
         case "paper-airplane":
-            playerChoiceDisplay[0].innerHTML = imagesOfOpponents[0].children[2].outerHTML
+            playerChoiceDisplay[0].innerHTML = imagesOfOpponents[0].children[2].outerHTML;
     }
 
     choicesContainer.style.display = 'none';
@@ -83,7 +81,7 @@ function createComputerChoice () {
             computerChoiceDisplay[0].innerHTML = imagesOfOpponents[0].children[1].outerHTML;
         break;
         case "paper-airplane":
-            computerChoiceDisplay[0].innerHTML = imagesOfOpponents[0].children[2].outerHTML
+            computerChoiceDisplay[0].innerHTML = imagesOfOpponents[0].children[2].outerHTML;
     }
 
     createResults();
@@ -155,14 +153,14 @@ function nextRound () {
  * This modal oinclides a new game button and when it is clicked it calls the newGame function.
  */
 function checkScore () {
-    let winnerModal = document.getElementById("winner-modal")
-    let loserModal = document.getElementById("loser-modal")
+    let winnerModal = document.getElementById("winner-modal");
+    let loserModal = document.getElementById("loser-modal");
 
     if (playerScore.innerText === "5") {
-       winnerModal.style.display = "block"
+       winnerModal.style.display = "block";
     }
     if (computerScore.innerText === "5") {
-        loserModal.style.display = "block"
+        loserModal.style.display = "block";
     }
 
     newGameButtons[0].addEventListener("click", newGame);
@@ -172,8 +170,8 @@ function checkScore () {
 
 /**This function returns the user to the battle container with the scores refreshing to 0 */
 function newGame () {
-    let winnerModal = document.getElementById("winner-modal")
-    let loserModal = document.getElementById("loser-modal")
+    let winnerModal = document.getElementById("winner-modal");
+    let loserModal = document.getElementById("loser-modal");
     loserModal.style.display = "none";
     winnerModal.style.display = "none";
     battleContainer.style.display = 'none';
