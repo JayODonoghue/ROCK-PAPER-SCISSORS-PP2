@@ -326,7 +326,7 @@ button img {
 
 /*Result message styling*/
 .result-message {
-    background-color: none;
+    background: none;
     height: 40px;
     display: none;
     flex-direction: column;
