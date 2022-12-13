@@ -6,7 +6,7 @@ This version of the rock, paper, scissors game that everyone is familiar with an
 
  <br/> 
 
-![ROCK, PAPER, SCISSORS Game on vaious devices](assets/images/readme-images/amiresponsive-rock-paper-scissors-image.png)
+![ROCK, PAPER, SCISSORS Game on various devices](assets/images/readme-images/amiresponsive-rock-paper-scissors-image.png)
 
 [View Rock, Paper, Scissors live game on Github pages here](https://jayodonoghue.github.io/ROCK-PAPER-SCISSORS-PP2/)
 
@@ -41,7 +41,34 @@ This version of the rock, paper, scissors game that everyone is familiar with an
 
 * I want to be able to continue to play for no matter how long with the reassurance that the game will perform with consistency every time. 
  
+<br/>
 
+---
+
+## Design
+
+<br/>
+
+### Colour Scheme
+
+![Rock, Paper, Scissors Palette](assets/images/readme-images/rock-paper-scissors-coolors-palette.png)
+
+<br/>
+
+As there were images used as buttons and used for displaying the users/computers choice I chose to keep the colour scheme minimalistic. I added the radial gradient effect as to add a touch of styling without overwhelming the user. The splash of aquamarine is there in order for the site not to be completely made up of variants of white and black. The colour palette was created by using the [Coolors](https://coolors.co/) website.
+
+<br/>
+
+### Typography
+
+<br/>
+
+The following two fonts were picked as they complimented each other.
+
+ * Lora is used for the headers on the site. This is a serif font. informal type of text used for the headings typically - suitable font for games
+ * Montserrat is used for the remainder of the text areas. This is  sans-serif font.
+
+<br/>
 
 
 
