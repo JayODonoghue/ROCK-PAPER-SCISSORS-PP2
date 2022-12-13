@@ -65,7 +65,7 @@ As there were images used as buttons and used for displaying the users/computers
 
 The following two fonts were picked as they complimented each other.
 
- * Lora is used for the headers on the site. This is a serif font. informal type of text used for the headings typically - suitable font for games
+ * Sedgwick Ave Display. This is an informal type of text used for the headings typically - I feel it is a suitable font for games.
  * Montserrat is used for the remainder of the text areas. This is  sans-serif font.
 
 <br/>
