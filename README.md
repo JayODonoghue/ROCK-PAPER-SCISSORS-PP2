@@ -6,3 +6,42 @@ This version of the rock, paper, scissors game that everyone is familiar with an
 ![ROCK, PAPER, SCISSORS Game on vaious devices](assets/images/)
 
 [View Rock, Paper, Scissors live game on Github pages here](https://jayodonoghue.github.io/ROCK-PAPER-SCISSORS-PP2/)
+
+
+## Testing
+
+<br/>
+
+### HTML Validator
+
+<br/>
+
+The HTML Validator was used on every HTML aspect of the project.
+
+<br/>
+
+![HTML Validator Report](assets/images/readme-images/html-validator-image.png)
+
+<br/>
+
+### CSS Validator
+
+<br/>
+
+The CSS Validator was used on every CSS aspect of the project.
+
+<br/>
+
+![CSS Validator Report](assets/images/readme-images/css-validator-image.png)
+
+<br/>
+
+### Lighthouse
+
+I used the Lighthouse feature in the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
+
+<br/>
+
+![Lighthouse Results](assets/images/readme-images/lighthouse-results-desktop.png)
+
+<br/>
