@@ -10,6 +10,7 @@ const playerChoiceDisplay = document.getElementsByClassName("player-choice");
 const computerChoiceDisplay = document.getElementsByClassName("computer-choice");
 const resultMessage = document.getElementsByClassName("result-message");
 const newGameButtons = document.querySelectorAll(".new-game-btn");
+const letsGoButton = document.getElementsByClassName("lets-go-btn");
 let playerScore = document.getElementById("player-score");
 let computerScore = document.getElementById("computer-score");
 let playerChoice;
@@ -26,6 +27,7 @@ for (let choice of possibleChoices) {
 
 /**First function called into action when the launch-game-btn is clicked.
  * Transitions from the intro page to the game area.
+ * welcomeModal is then called upon.
  */ 
 function launchGame() {
     introPage.style.display = 'none';
@@ -33,6 +35,14 @@ function launchGame() {
 
     let welcomeModal = document.getElementById("welcome-modal");
     welcomeModal.style.display = "block";
+
+    letsGoButton[0].addEventListener("click", closeWelcomeModal);
+}
+
+/**This function closes the welcomeModal once the letsGoButton is clicked */
+function closeWelcomeModal() {
+    let welcomeModal = document.getElementById("welcome-modal");
+    welcomeModal.style.display = "none";
 }
 
 /**This function is called upon when the user makes their selection from the 3 choices made available.
