@@ -104,6 +104,12 @@ Battle Container
 
 <br/>
 
+Welcome Modal
+
+![Welcome-modal Wireframes](assets/images/readme-images/rps-welcomeModal-wireframe.png)
+
+<br/>
+
 Result Modal
 
 ![Result-modal Wireframes](assets/images/readme-images/rps-resultModal-wireframe.png)
