@@ -212,3 +212,37 @@ I used the Lighthouse feature in the Chrome Developer Tools to test the performa
 ![Lighthouse Results](assets/images/readme-images/lighthouse-results-desktop-image.png)
 
 <br/>
+
+### Solved Bugs
+
+<br/>
+
+1. When adding eventt listener for possibleChoices in JavaScript, there was an error showing on the console. This was due to my loop being an 'in' loop rather than an 'of' loop and after altering this the error displaying on the console was eradicated. 
+
+![possibleChoice Bug](assets/images/readme-images/best-practices-image-2.png)
+
+<br/>
+
+2. When creating the playerChoice and computerChoice switch case I could not get the choice to replicate the image of their choice. However after using Dev Tools I was able to test certain variables and needed to alter some code to include children in completing my statements.
+
+3. When creating the modals I was unsure on how to get the pages to transition etc. This reulted in fade in and out classes being added but to no avail. However after reading anf using the code for W3C School the modals worked perfectly.
+
+4. When creating the function for the game to end once the player or computer reaches a score of 5 I used innerHTML = 5. However after further investigation I realised the numbers were being logged as strings so once the innerHTML was change to innerText and the value 5 was change to a string "5" the function worked correctly.
+
+<br/>
+
+### Known Bugs
+
+<br/>
+
+I have no unresolved bugs.
+
+### Full Testing
+
+* The site was fully tested using a range of browsers (Google Chrome, Safari, Firefox).
+* The site was fully tested using a range of devices (DELL Large Screen Monitor, ASUS Laptop, iPhone 13, iPhone 7, Huawei P40 and Samsung S8)
+* The site was fully tested using Chrom Dev Tools to test the responsiveness on different screen sizes. Dev Tools was also used to use to test reults to the console.
+* The link in the game was fully tested. The link worked as expected. All internal links leading to the relevant page and all external links leading to a new tab.
+* All buttons were tested ensuring that once activated they completed the correct function.
+
+<br/>
