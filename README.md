@@ -110,6 +110,18 @@ Result Modal
 
 <br/>
 
+### Accessibility
+
+I have achieved a high level of accessibility by using the following:
+
+* Using aria-labels.
+* Ensuring there is a clear colour contrast throught the site. Initially the colour contrast for the font colours I had chosen was not defined enough however by adding a text shadow to the items it provides a clear contrast.
+* Using semantic HTML.
+
+<br/>
+
+---
+
 ## Testing
 
 <br/>
