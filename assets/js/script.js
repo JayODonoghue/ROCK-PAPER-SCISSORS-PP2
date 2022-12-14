@@ -31,8 +31,8 @@ function launchGame() {
     introPage.style.display = 'none';
     gameArea.style.display = 'block';
 
-    let winnerModal = document.getElementById("winner-modal");
-    winnerModal.style.display = "block";
+    let welcomeModal = document.getElementById("welcome-modal");
+    welcomeModal.style.display = "block";
 }
 
 /**This function is called upon when the user makes their selection from the 3 choices made available.
