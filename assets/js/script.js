@@ -11,6 +11,7 @@ const computerChoiceDisplay = document.getElementsByClassName("computer-choice")
 const resultMessage = document.getElementsByClassName("result-message");
 const newGameButtons = document.querySelectorAll(".new-game-btn");
 const letsGoButton = document.getElementsByClassName("lets-go-btn");
+const header = document.getElementsByTagName("h1");
 let playerScore = document.getElementById("player-score");
 let computerScore = document.getElementById("computer-score");
 let playerChoice;
@@ -24,6 +25,9 @@ launchButton.addEventListener("click", launchGame);
 for (let choice of possibleChoices) {
     choice.addEventListener("click", possibleChoice);
 }
+
+/**Event Listener for when user clicks which the h1 heading */
+header[0].addEventListener("click", beginning);
 
 /**First function called into action when the launch-game-btn is clicked.
  * Transitions from the intro page to the game area.
@@ -194,3 +198,13 @@ function newGame () {
     computerScore.innerText = "0";
 }
 
+/**This function brings the user back to the intro page when the h1 is clicked */
+function beginning () {
+    introPage.style.display = 'block';
+    gameArea.style.display = 'none';
+    playerScore.innerText = "0";
+    computerScore.innerText = "0";
+    battleContainer.style.display = 'none';
+    choicesContainer.style.display = 'flex';
+    resultMessage[0].style.display = 'none';
+}
