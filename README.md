@@ -122,6 +122,38 @@ I have achieved a high level of accessibility by using the following:
 
 ---
 
+<br/>
+
+## Technologies Used
+
+<br/>
+
+### Languages Used
+
+<br/>
+
+* HTML
+* CSS 
+* JavaScript
+
+### Frameworks, Libraries & Programs Used
+
+<br/>
+
+* Balsamiq - This was used to create the wireframes.
+* Git - This was used for version control.
+* Github - This was used to save and store all the files for the website.
+* Font Awesome - This was used for the icons in the website.
+* Google fonts - This was used to import the fonts used for the website.
+* Google Dev Tools - This was used to test different code and features.
+* Am I Responsive - This was used to show the website on a variety of different screens.
+
+<br/>
+
+---
+
+<br/>
+
 ## Testing
 
 <br/>
