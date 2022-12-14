@@ -379,7 +379,7 @@ button img {
     background-color: rgba(0,0,0,0.4);
 }
 
-.winner-modal-content, .loser-modal-content {
+.winner-modal-content, .loser-modal-content, .welcome-modal-content {
     position: relative;
     background-color: #218380;
     margin: auto;
@@ -491,7 +491,7 @@ button img {
     .first-to-5 h3 {
         font-size: 140%;
     }
-    .winner-modal-content, .loser-modal-content {
+    .winner-modal-content, .loser-modal-content, .welcome-modal-content {
         height: 500px;
         width: 350px;
     }
@@ -551,9 +551,9 @@ button img {
     .first-to-5 h3 {
         font-size: 150%;
     }
-    .winner-modal-content, .loser-modal-content {
-        height: 500px;
-        width: 350px;
+    .winner-modal-content, .loser-modal-content, .welcome-modal-content {
+        height: 510px;
+        width: 360px;
     }
     .h3-modal {
         font-size: 160%;
