@@ -28,7 +28,7 @@ This version of the rock, paper, scissors game that everyone is familiar with an
 #### First Time Visitors Goals
 
 * I want to play a game of rock, paper scissors against the computer.
-* I wamnt to make my selection and for the computer to randomly generate an opposing selection.
+* I want to make my selection and for the computer to randomly generate an opposing selection.
 * I want the site to be responsive to my device.
 * I want the site to be easy to navigate.
 
@@ -39,6 +39,7 @@ This version of the rock, paper, scissors game that everyone is familiar with an
 
 #### Frequent Visitor Goals
 
+* I want to be click the header heading allowing me to return to the beginning.
 * I want to be able to continue to play for no matter how long with the reassurance that the game will perform with consistency every time. 
  
 <br/>
@@ -246,3 +247,32 @@ I have no unresolved bugs.
 * All buttons were tested ensuring that once activated they completed the correct function.
 
 <br/>
+
+### Testing Users Stories
+
+<br/>
+
+`First Time Visitors`
+
+| Goals | How are they achieved? |
+| :--- | :--- |
+| I want to play a game of rock, paper scissors against the computer. | The site is fun way to play this game and is available to use whenever the user wishes. |
+| I want to make my selection and for the computer to randomly generate an opposing selection. | There are functions created for this action to take place. So all the user has to worry about is making their own choice while the computer does the rest. |
+| I want the site to be responsive to my device. | This site has been developed to be responsive on all screen sizes. |
+| I want the site to be easy to navigate. | This game takes a minimalistic approach in terms of content however this is purposely done as to not distract the user and to focus solely on the actual game aspects. Buttons are used for easy navigation through the site. |
+
+`Returning Visitors`
+
+|  Goals | How are they achieved? |
+| :--- | :--- |
+| I want to see a display modal appear to inform who the winner of the game is. | A function was created to determine the winner once either the player or the computer reached 5. Once this happened a modal would appear to inform the user who the winner is. |
+| I want to be able to start a new game once a winner from the previous game is declared. | Once the winner is displayed on the modal there is a button on the bottom giving the user an option to start a new game. |
+
+`Frequent Visitors`
+
+| Goals | How are they achieved? |
+| :--- | :--- |
+| I want to be click the header heading allowing me to return to the beginning | An event listener was added to the h1 heading to incorporate a click event. This reults in the user being able to click on this heading and refreshing the game bringing you back to the intro page with the scores reset to 0. |
+| I want to be able to continue to play for no matter how long with the reassurance that the game will perform with consistency every time. | This game will repeat the process of starting a new game once the user wishes to do so for as many times and with each function working correctly each time. |
+
+- - -
