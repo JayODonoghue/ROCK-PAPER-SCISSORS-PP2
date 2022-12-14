@@ -364,7 +364,7 @@ button img {
 }
 
 
-/*New game modal styling*/
+/*Modal styling*/
 .modal {
     display: none;
     position: fixed; 
@@ -427,6 +427,8 @@ button img {
     font-size: 100%;
 }
 
+
+
 .new-game-btn {
     color: white;
     background-color: #218380;
@@ -443,6 +445,26 @@ button img {
 }
 
 .new-game-btn:hover {
+    background-color: white;
+    color: #218380;
+}
+
+.lets-go-btn {
+    color: white;
+    background-color: #218380;
+    text-transform: uppercase;
+    border: 2px solid white;
+    font-weight: 700;
+    font-size: 120%;
+    width: 150px;
+    height: 40px;
+    border-radius: 3px;
+    transition: 100ms;
+    padding: 5px;
+    margin: 20px;
+}
+
+.lets-go-btn:hover {
     background-color: white;
     color: #218380;
 }
