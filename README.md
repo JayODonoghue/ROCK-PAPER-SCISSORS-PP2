@@ -182,6 +182,19 @@ The CSS Validator was used on every CSS aspect of the project.
 
 <br/>
 
+### JavaScript Validator
+
+<br/>
+
+JS Hint was used on every JavaScript aspect of the project.
+
+<br/>
+
+![JS Hint Report](assets/images/readme-images/js-hint-image.png)
+
+<br/>
+
+
 ### Lighthouse
 
 <br/>
