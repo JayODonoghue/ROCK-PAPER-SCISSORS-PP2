@@ -14,8 +14,56 @@ This version of the rock, paper, scissors game that everyone is familiar with an
 
 ## CONTENT
 
+* [User Experience (UX)](#user-experience-ux)
+  * [User Stories](#user-stories)
+
+<br/>
+
+* [Design](#design)
+  * [Colour Scheme](#colour-scheme)
+  * [Typography](#typography)
+  * [Imagery](#imagery)
+  * [Wireframes](#wireframes)
+  * [Features](#features)
+  * [Accessibility](#accessibility)
+
+<br/>
+
+* [Technologies Used](#technologies-used)
+    * [Languages Used](#languages-used)
+    * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
+
+<br/>
+
+* [Testing](#testing)
+    * [HTML Validator](#html-validator)
+    * [CSS Validator](#css-validator)
+    * [JavaScript Validator](#javascript-validator)
+    * [Lighthouse](#lighthouse)
+    * [Solved Bugs](#solved-bugs)
+    * [Known Bugs](#known-bugs)
+    * [Full Testing](#full-testing)
+    * [Testing User Stories](#testing-users-stories)
+
+<br/>
+
+* [Deployment & Local Deployment](#deployment--local-deployment)
+  * [Deployment](#deployment)
+  * [Local Deployment](#local-deployment)
+    * [How to Clone](#how-to-clone)
+
+<br/>
+
+* [Credits](#credits)
+  * [Layout](#layout)
+  * [Content](#content)
+  * [Code](#code)
+  * [Media](#media)
+  * [Acknowledgements](#acknowledgements)
 
 ---
+
+<br/>
 
 ## User Experience (UX)  
 
