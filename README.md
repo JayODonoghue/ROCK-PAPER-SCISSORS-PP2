@@ -117,6 +117,86 @@ Result Modal
 
 <br/>
 
+### Features
+
+<br/>
+
+The website is made up of the intro page, the games-area which includes the choice container and the battle container along with modals that appear under certain scenarios. 
+
+<br/>
+
+* All pages are responsive and have:
+
+  * A favicon in the browser tab.
+
+  ![Favicon](assets/images/readme-images/favicon-top-of-browser-image.png)
+
+  <br/>
+
+  * A heading/title which contains a link returning to the intro page and resetting the scores. 
+
+  ![Heading Feature](assets/images/readme-images/heading-image.png)
+
+  <br/>
+
+  * A pointer cursor will display when hovering a button.
+
+<br/>
+
+  * A footer which contains a link to the github repository for this site. This links is shown as icons to give a cleaner more modern look.
+
+  ![Footer Feature](assets/images/readme-images/footer-feature-image.png)
+
+<br/>
+
+* The Intro Page has:  
+  * The intro page includes the header which has the title in it along with a container made up of a backgrounf image of a circle of arrows and then positioned on that circle is the 3 player options the user can pick. The rock, Edward Scissorhands and a Paper Airplane. Underneath this container these images is a button to start the game. This launches you to the game section along with the welcome modal pop up. At the bottom is the footer with the github link.
+
+  ![Intro Page](assets/images/readme-images/intro-page-features-image.png)
+
+  <br/>
+ 
+ * The Welcome Modal has:  
+   * This modal appears to give a very brief synopsis of how the game works. At the bottom of the modal there is a button to continue to the choice container.
+
+   ![Welcome Modal](assets/images/readme-images/welcome-modal-feature-image.png)
+
+<br/>
+
+* The Game area is made up of the choice container and the battle container:  
+  * The constant in both of these are that the score is visible aling with the header and the footer.
+
+<br/>
+
+ * The Choice Container has:  
+   * This container has the score available at the top along with the header which is clickable and brings you back to the intro page. It also has the exact same background image and images of the rock, scissorhand and the paper airplane as the intro page however these images now act as buttons that rotate once hovered over. There is also a little box giving a brief instruction on what to do. Underneath the instruction box there is a one liner stating that the first to 5 is the winner.
+
+   ![Choice Container](assets/images/readme-images/choice-container-feature-image.png)
+
+   <br/>
+
+ * The Battle Container has:  
+   * This container has the score available at the top along with the header which is clickable and brings you back to the intro page. It also has the users choice vs the computers choice with the result message underneath along with a button to continue to the next. Once someone reaches a score of 5 the results modals are called.
+
+   ![Battle Container](assets/images/readme-images/battle-container-feature-image.png)
+
+   <br/>
+ 
+ * The Winner / Loser Modal has:  
+   * This modal appears to give a result on whether the user is a winner/loser. At the bottom of this modal is a button that redirects you back to the choices container with the scores reset to 0.
+
+   ![Winner / Loser Modal](assets/images/readme-images/result-modals-features-image.png)
+
+   <br/>
+
+* Future Implementations:
+  * Add the ability to create a username.
+  * Add the ability to play online with others.
+  * After the user makes his choice an animation of some sort could be added to create the two choices fighting each other.
+  * Add more animations and variations to the transitions between containers etc.
+
+<br/>
+
 ### Accessibility
 
 I have achieved a high level of accessibility by using the following:
