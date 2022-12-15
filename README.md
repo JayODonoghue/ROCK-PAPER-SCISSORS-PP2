@@ -226,7 +226,7 @@ I used the Lighthouse feature in the Chrome Developer Tools to test the performa
 
 2. When creating the playerChoice and computerChoice switch case I could not get the choice to replicate the image of their choice. However after using Dev Tools I was able to test certain variables and needed to alter some code to include children in completing my statements.
 
-3. When creating the modals I was unsure on how to get the pages to transition etc. This reulted in fade in and out classes being added but to no avail. However after reading anf using the code for W3C School the modals worked perfectly.
+3. When creating the modals I was unsure on how to get the pages to transition etc. This reulted in fade in and out classes being added but to no avail. However after reading anf using the code for W3 School the modals worked perfectly.
 
 4. When creating the function for the game to end once the player or computer reaches a score of 5 I used innerHTML = 5. However after further investigation I realised the numbers were being logged as strings so once the innerHTML was change to innerText and the value 5 was change to a string "5" the function worked correctly.
 
@@ -275,4 +275,81 @@ I have no unresolved bugs.
 | I want to be click the header heading allowing me to return to the beginning | An event listener was added to the h1 heading to incorporate a click event. This reults in the user being able to click on this heading and refreshing the game bringing you back to the intro page with the scores reset to 0. |
 | I want to be able to continue to play for no matter how long with the reassurance that the game will perform with consistency every time. | This game will repeat the process of starting a new game once the user wishes to do so for as many times and with each function working correctly each time. |
 
+<br/>
+
 - - -
+
+ ## Deployment & Local Deployment
+
+<br/>
+
+  ### Deployment
+
+<br/>
+
+Github Pages was used to deploy the live website. The instructions to achieve this are below:
+
+1. Log in/Sign Up to Github.
+2. Find the ROCK-PAPER-SCISSORS-PP2 repository.
+3. Go to Settings > Pages.
+5. In the Source section, choose Main from the drop down select branch menu. Select Root from the drop down select folder menu.
+6. Click Save. Your live Github Pages site is now deployed at the URL shown.
+
+<br/>
+
+### Local Deployment
+
+<br/>
+
+#### How to Clone
+
+<br/>
+
+1. Log in/Sign Up to Github.
+2. Find the ROCK-PAPER-SCISSORS-PP2 repository.
+3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+
+<br/>
+
+--- 
+
+<br/>
+
+## Credits
+
+### Layout
+* The layout of the site was established by me. 
+* The layout of this readme file is based off my previous projects readme.
+
+<br/>
+
+### Content 
+* The content was written by Jay O'Donoghue. 
+
+<br/>
+
+### Code
+* I watched a tutorial by [Code with Ania Kubów](https://www.youtube.com/watch?v=RwFeg0cEZvQ&t=925s) which may include some general ideas that I was able to replicate to my own standard .
+* I was influenced by the Love Maths project by Code Institiute for the scores area. I used and altered the code for my project.
+* I used the W3 Schools code for the modals including the animations css effects etc. The code is available here [Modals - W3 School](https://www.w3schools.com/howto/howto_css_modals.asp).
+* I used code from [Scaler - Topics](https://www.scaler.com/topics/image-button-in-html/) to create the 360 degree rotate effect on the button elements in the choice container.
+* I learned how to do the text shadow from a thread on Stack Overflow and adjusted the code to suiit my style for the site.
+* I used MDN Web docs to research information on radial gradients and again adjusted to code to suit my style for the site.
+
+<br/>
+
+### Media 
+* [Background image - circle with arrows](https://www.pinterest.com/pin/857865429008551970/).
+* [Paper - airplane image](https://www.cleanpng.com/png-airplane-paper-plane-dotted-line-909837/download-png.html).
+* [Edward - Scissorhands image](https://www.closerweekly.com/posts/edward-scissorhands-movie-facts-113319/).
+* [The rock image](https://cdn.bleacherreport.net/images/team_logos/328x328/the_rock.png).
+* [Favicon](https://www.flaticon.com/free-icons/rock-paper-scissors).
+
+### Acknowledgements
+* I would like to thank my mentor Chris in guiding me in the right direction and helping whenever I had a query.
+* I would like to thank the people who reviewed my code in peer-code-review on Slack.
+* I would like to thank the tutor support people who answered all the queries I had throughout the project.
+* I would like to thank the cohort lead and the cohort Facilitator on checking up and keeping everyone on schedule.
+
